@@ -9,9 +9,10 @@ namespace expression_members
         static void Main(string[] args)
         {
             //So I called Bug method and passed the arguments it needed to feed the animals!
-            Bug Predators = new Bug("Simba", "Limba", new List<string>() { "Bird"}, new List<string>{ "Meat"});
+            Bug Predators = new Bug("Simba", "Limba", new List<string>() { "Bird"}, new List<string>{ "Grass"});
             Bug Prey = new Bug("Pumba", "Kimba", new List<string>() { "Bird"}, new List<string>{ "Meat"});
             Console.WriteLine(Predators.Eat("Meat"));
+            Console.WriteLine(Prey.Eat("Grass"));
         }
     }
     public class Bug
